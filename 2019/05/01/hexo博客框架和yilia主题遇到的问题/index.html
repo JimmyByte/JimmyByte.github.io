@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://weijunpeng.github.io">
-  <title>Tag: 编程感悟 | JunPeng.wei</title>
+  <title>hexo博客框架和yilia主题遇到的问题 | JunPeng.wei</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Find something bigger than yourself.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="JunPeng.wei">
-<meta property="og:url" content="https://weijunpeng.github.io/tags/编程感悟/index.html">
+  <meta name="description" content="首先先安装nodejs 和 git 如果已经安装完成执行安装hexo命令：  npm install -g hexo-cli  …">
+<meta name="keywords" content="-hexo配置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo博客框架和yilia主题遇到的问题">
+<meta property="og:url" content="https://weijunpeng.github.io/2019/05/01/hexo博客框架和yilia主题遇到的问题/index.html">
 <meta property="og:site_name" content="JunPeng.wei">
-<meta property="og:description" content="Find something bigger than yourself.">
+<meta property="og:description" content="首先先安装nodejs 和 git 如果已经安装完成执行安装hexo命令：  npm install -g hexo-cli  …">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-05-01T04:35:33.623Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JunPeng.wei">
-<meta name="twitter:description" content="Find something bigger than yourself.">
+<meta name="twitter:title" content="hexo博客框架和yilia主题遇到的问题">
+<meta name="twitter:description" content="首先先安装nodejs 和 git 如果已经安装完成执行安装hexo命令：  npm install -g hexo-cli  …">
   
     <link rel="alternative" href="/atom.xml" title="JunPeng.wei" type="application/atom+xml">
   
@@ -153,60 +155,202 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-hexo博客框架和yilia主题遇到的问题" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/30/hello-world/" class="archive-article-date">
-  	<time datetime="2019-04-30T13:42:42.069Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-30</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/30/hello-world/">Hello World</a>
+    <h1 class="article-title" itemprop="name">
+      hexo博客框架和yilia主题遇到的问题
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/05/01/hexo博客框架和yilia主题遇到的问题/" class="archive-article-date">
+  	<time datetime="2019-05-01T04:26:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>首先先安装<strong>nodejs</strong> 和 <strong>git</strong></p>
+<p>如果已经安装完成执行安装hexo命令：</p>
+<blockquote>
+<p><strong>npm install -g hexo-cli</strong></p>
+</blockquote>
+<p>…</p>
+<a id="more"></a>
+<h3 id="可能会报权限错误问题"><a href="#可能会报权限错误问题" class="headerlink" title="可能会报权限错误问题"></a>可能会报权限错误问题</h3><blockquote>
+<p>gyp WARN EACCES attempting to reinstall using temporary dev dir “/usr/local/lib/node_modules/hexo-cli/node_modules/fsevents/.node-gyp”<br>gyp WARN EACCES user “root” does not have permission to access the dev dir “/usr/local/lib/node_modules/hexo-cli/node_modules/fsevents/.node-gyp/8.11.4”</p>
+</blockquote>
+<p>如果有权限问题执行：</p>
+<blockquote>
+<p>npm install -g hexo-cli –unsafe-perm</p>
+</blockquote>
+<p>安装成功提示信息：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">weijunpengdeMBP:hexo_blog weijunpeng$ sudo npm install -g hexo-cli --unsafe-perm</span><br><span class="line">/usr/local/bin/hexo -&gt; /usr/local/lib/node_modules/hexo-cli/bin/hexo</span><br><span class="line"></span><br><span class="line">&gt; fsevents@1.2.9 install /usr/local/lib/node_modules/hexo-cli/node_modules/fsevents</span><br><span class="line">&gt; node install</span><br><span class="line"></span><br><span class="line">node-pre-gyp WARN Using needle for node-pre-gyp https download </span><br><span class="line">node-pre-gyp WARN Pre-built binaries not installable for fsevents@1.2.9 and node@8.11.4 (node-v57 ABI, unknown) (falling back to source compile with node-gyp) </span><br><span class="line">node-pre-gyp WARN Hit error socket hang up </span><br><span class="line">  SOLINK_MODULE(target) Release/.node</span><br><span class="line">  CXX(target) Release/obj.target/fse/fsevents.o</span><br><span class="line">  SOLINK_MODULE(target) Release/fse.node</span><br><span class="line">  COPY /usr/local/lib/node_modules/hexo-cli/node_modules/fsevents/lib/binding/Release/node-v57-darwin-x64/fse.node</span><br><span class="line">  TOUCH Release/obj.target/action_after_build.stamp</span><br><span class="line">+ hexo-cli@1.1.0</span><br><span class="line">added 68 packages and updated 1 package in 29.219s</span><br></pre></td></tr></table></figure>
+<h3 id="在GitHub中创建一个新的repository"><a href="#在GitHub中创建一个新的repository" class="headerlink" title="在GitHub中创建一个新的repository"></a>在GitHub中创建一个新的repository</h3><p>Repository name写成xxx.github.io</p>
+<p>xxx就是想要访问的地址名字，自定义。</p>
+<p>。。。</p>
+<p>其它步骤都没什么问题。</p>
+<p>最后常用的命令：</p>
+<p>​    每次做完更改东西后需要切换到myblog目录下，执行：</p>
+<p>​        hexo clean<br>​        hexo g<br>​        hexo d</p>
+<p>​    </p>
+<p>​    创建一个新文章</p>
+<p>​        hexo new newpapername</p>
+<p>​    主题中设置头像的方式：</p>
+<p>​        在主题的 _config.yml中： </p>
+<p>​            avatar: /img/avatar.jpg</p>
+<p>​        文章分享微信生成二维码失败：</p>
+<p>​            在themes/yilia/layout/_partial/post/share.ejs 中修改成：            </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;&lt;%- &apos;qrcode&apos; in locals ? qrcode(sUrl) : &apos;http://bshare.optimix.asia/barCode?site=weixin&amp;url=&apos; + sUrl  %&gt;&quot; alt=&quot;微信分享二维码&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>​            </p>
+<p>参考资料：</p>
+<p>​    <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo官网</a></p>
+<p>​    <a href="https://blog.csdn.net/sinat_37781304/article/details/82729029" target="_blank" rel="noopener">安装教程</a>    </p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">编程感悟</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">-hexo配置</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://bshare.optimix.asia/barCode?site=weixin&url=https://weijunpeng.github.io/2019/05/01/hexo博客框架和yilia主题遇到的问题/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/04/30/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -229,9 +373,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
